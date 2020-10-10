@@ -1,0 +1,23 @@
+{
+  "name": "inkling-boy-bot",
+  "version": "1.0.0",
+  "description": "discordで動かしたいbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzuki84g/inkling-boy-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suzuki84g/inkling-boy-bot/issues"
+  },
+  "homepage": "https://github.com/suzuki84g/inkling-boy-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
