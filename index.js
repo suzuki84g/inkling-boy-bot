@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const config = require('./config.json');
+const { prefix, token } = require('./config.json');
 const client = new Discord.Client();
 
 client.once('ready', () => {
@@ -7,10 +7,11 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content === '!ping') {
-    // メッセージが送信されたチャンネルへ「Pong.」を送り返す。
+  if (message.content.startsWith(`${prefix}ping`)) {
     message.channel.send('Pong.');
+  } else if (message.content.startsWith(`${prefix}beep`)) {
+    message.channel.send('Boop.');
   }
 });
 
-client.login(config.token);
+client.login(token);
