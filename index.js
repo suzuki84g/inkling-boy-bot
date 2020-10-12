@@ -9,11 +9,21 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content.startsWith(`${prefix}ping`)) {
-    message.channel.send('Pong.');
+  // messageは詳細情報が戻ってくる
+  // console.log(message)
+  // includesでテキストに指定した文字列
+  // todo:botが入力した場合を除くを追加
+  if (message.content.includes(`こんにちは`)) {
+    message.channel.send('こんにちは！！');
   } else if (message.content.startsWith(`${prefix}beep`)) {
     message.channel.send('Boop.');
   }
 });
+
+client.on('message', message => {
+  if (message.content.startsWith()) {
+
+  }
+})
 
 client.login(token);
