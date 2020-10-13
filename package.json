@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/suzuki84g/inkling-boy-bot#readme",
   "dependencies": {
-    "discord.js": "^12.3.1"
+    "discord.js": "^12.3.1",
+    "google-spreadsheet": "^3.0.13"
   }
 }
